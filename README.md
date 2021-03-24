@@ -1,6 +1,7 @@
 # SmellML
 SmellML is a tool that combines different code smelling tools for python into a nice, compact, push button tool. 
 
+![logo for SmellML](figs/logo.png)
 
 ## Dependencies
 
