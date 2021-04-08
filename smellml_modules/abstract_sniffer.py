@@ -1,0 +1,46 @@
+#! usr/bin/python3
+import abc
+from abc import ABC, abstractmethod, abstractproperty
+import subprocess
+
+class Abstract_Sniffer(ABC):
+
+    def __init__(self):
+        self.outdir = str()
+
+    @property
+    @abstractmethod
+    def CMD(self):
+        pass
+
+    @property
+    @abstractmethod
+    def sniffer_name(self):
+        pass
+
+    def set_outdir(self, new_outdir):
+        """ set a new out directory """
+        self.outdir = new_outdir
+
+    def get_outdir(self):
+        """ returns string of outdir """
+        return self.outdir
+
+    def getCMD(self):
+        """ returns the CMD """
+        return self.CMD
+
+    def run_command(self, infilepath, outdir):
+        """ runs the command for the program """
+        full_cmd = self.CMD.split("INFILE")[0] + infilepath + self.CMD.split("INFILE")[1]
+        subprocess.call(f"{full_cmd} >> {self.sniffer_name}_{outdir}.txt",
+                        shell=True)
+        print(full_cmd)
+        return 0
+
+    # @abstractmethod
+    # def parse_output(self, directory=self.outdir):
+    #     pass
+
+    def parse_doc(self):
+        print("Hello, world!")
