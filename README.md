@@ -12,7 +12,7 @@ python SmellML.py <ML code base>
 
 * Example:
 ```
-python SmellML.py facswap/
+python SmellML.py faceswap/
 ```
 
 
