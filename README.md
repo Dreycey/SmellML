@@ -3,6 +3,19 @@ SmellML is a tool that combines different code smelling tools for python into a 
 
 ![logo for SmellML](figs/logo.png)
 
+# How to use
+
+* Usage:
+```
+python SmellML.py <ML code base>
+```
+
+* Example:
+```
+python SmellML.py facswap/
+```
+
+
 ## Dependencies
 
 ```
@@ -13,7 +26,7 @@ conda install -c anaconda flake8-polyfill
 conda install -c anaconda flake8
 ```
 
-## Usage
+## Usage Commands
 
 ```
 pylint faceswap/tools/
