@@ -33,14 +33,13 @@ class Abstract_Sniffer(ABC):
     def run_command(self, infilepath, outdir):
         """ runs the command for the program """
         full_cmd = self.CMD.split("INFILE")[0] + infilepath + self.CMD.split("INFILE")[1]
-        subprocess.call(f"{full_cmd} >> {self.sniffer_name}_{outdir}.txt",
-                        shell=True)
+        subprocess.call(f"{full_cmd} > {outdir}_{self.sniffer_name}.txt",shell=True)
         print(full_cmd)
-        return 0
+        return f"{outdir}_{self.sniffer_name}.txt"
 
-    # @abstractmethod
-    # def parse_output(self, directory=self.outdir):
-    #     pass
+    @abstractmethod
+    def parse_output(self, outputfile, directory):
+        pass
 
     def parse_doc(self):
         print("Hello, world!")
