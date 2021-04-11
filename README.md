@@ -27,16 +27,27 @@ python3 SmellML.py  my-software2.0-dataset-20210331.csv  --runcsv
 
 * structure of csvfile
 It must have a name in the first column and a git link in the second:
+
+```
+"Project Name","URL"
+"charlesq34/pointnet2","https://github.com/charlesq34/pointnet2.git"
+"openai/finetune-transformer-lm","https://github.com/openai/finetune-transformer-lm.git"
+```
+
+But having extra information is fine:
+
 ```
 "Project Name","URL","ML libraries","Number of Contributors","Number of Stars"
 "charlesq34/pointnet2","https://github.com/charlesq34/pointnet2.git","sklearn,tensorflow","3","1522"
 "openai/finetune-transformer-lm","https://github.com/openai/finetune-transformer-lm.git","sklearn,tensorflow","3","1470"
 ```
 
-## CSV of ML from [ML projects](https://serene-beach-16261.herokuapp.com/)
+# Extra information on the SmellML project:
+
+### CSV of ML from [ML projects](https://serene-beach-16261.herokuapp.com/)
 This helped us automate the testing of SmellML. Special thanks is given to Malinda Dilhara, Ameya Ketkar, and Professor Danny Dig.
 
-## Dependencies
+### Dependencies
 
 ```
 pip install bandit
@@ -46,7 +57,7 @@ conda install -c anaconda flake8-polyfill
 conda install -c anaconda flake8
 ```
 
-## Usage Commands for underlying software
+### Usage Commands for underlying software
 
 ```
 pylint faceswap/tools/
@@ -55,7 +66,7 @@ bandit -r pysmell/
 radon cc pysmell/ -a -nc
 ```
 
-## Manuals
+### Manuals for underlying tools
 
 * Bandit (security)
     * https://pypi.org/project/bandit/
