@@ -47,7 +47,8 @@ class Pipeline_Manager:
                             "bandit_conf_med",
                             "bandit_conf_high",
                             "radon_complexity",
-                            "pylint_rating"]
+                            "pylint_rating",
+                            "bandit_lines"]
 
     def download_codebase(self, githubURL):
         """ given a URL, this downloads the directory """

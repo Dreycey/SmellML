@@ -57,6 +57,7 @@ class Bandit_Sniffer(Abstract_Sniffer):
 
                        issue_counter += 1
                    elif "Run metrics:" in line:
+                       out_dictionary["bandit_lines"] = file[line_counter-3].strip().split(" ")[4].strip("\n")
                        out_dictionary["bandit_sev_undefined"] = file[line_counter+2].split(" ")[1].strip("\n")
                        out_dictionary["bandit_sev_low"] = file[line_counter+3].split(" ")[1].strip("\n")
                        out_dictionary["bandit_sev_med"] = file[line_counter+4].split(" ")[1].strip("\n")
