@@ -41,31 +41,34 @@ class Flake8_Sniffer(Abstract_Sniffer):
         out_dictionary = {}
         if os.path.exists(outputfile) and \
               os.path.getsize(outputfile) > 600: # make sure exists and not empty.
-           f = open(outputfile)
-           file = f.readlines()
+            f = open(outputfile)
+            file = f.readlines()
 
-           # count issues
-           issue_counter = {}
-           for line in file:
-               issue = line.strip("\n").split(" ")[1:]
-               issue = " ".join(issue)
-               if issue in issue_counter:
-                   issue_counter[issue] += 1
-               else:
-                   issue_counter[issue] = 1
-           f.close()
-           sorted_top_issues = [k for k, v in sorted(issue_counter.items(),
-                                                 key=lambda item: item[1],
-                                                 reverse=True)]
-           if (len(sorted_top_issues) > 2):
-               out_dictionary["flake8_issue_one"] = sorted_top_issues[0]
-               out_dictionary["flake8_issue_two"] = sorted_top_issues[1]
-               out_dictionary["flake8_issue_three"] = sorted_top_issues[2]
-           elif (len(sorted_top_issues) > 1):
-               out_dictionary["flake8_issue_one"] = sorted_top_issues[0]
-               out_dictionary["flake8_issue_two"] = sorted_top_issues[1]
-           elif (len(sorted_top_issues) > 0):
-               out_dictionary["flake8_issue_one"] = sorted_top_issues[0]
+            # count issues
+            try:
+                issue_counter = {}
+                for line in file:
+                   issue = line.strip("\n").split(" ")[1:]
+                   issue = " ".join(issue)
+                   if issue in issue_counter:
+                       issue_counter[issue] += 1
+                   else:
+                       issue_counter[issue] = 1
+                sorted_top_issues = [k for k, v in sorted(issue_counter.items(),
+                                                     key=lambda item: item[1],
+                                                     reverse=True)]
+                if (len(sorted_top_issues) > 2):
+                   out_dictionary["flake8_issue_one"] = sorted_top_issues[0]
+                   out_dictionary["flake8_issue_two"] = sorted_top_issues[1]
+                   out_dictionary["flake8_issue_three"] = sorted_top_issues[2]
+                elif (len(sorted_top_issues) > 1):
+                   out_dictionary["flake8_issue_one"] = sorted_top_issues[0]
+                   out_dictionary["flake8_issue_two"] = sorted_top_issues[1]
+                elif (len(sorted_top_issues) > 0):
+                   out_dictionary["flake8_issue_one"] = sorted_top_issues[0]
+            except:
+                print("something went wrong when parsing pylint")
+            f.close()
 
 
         return out_dictionary

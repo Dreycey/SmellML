@@ -40,8 +40,11 @@ class Radon_Sniffer(Abstract_Sniffer):
               os.path.getsize(outputfile) > 600: # make sure exists and not empty.
            f = open(outputfile)
            file = f.readlines()
-           complexity = file[-1].strip().split(" ")[-1].strip("(").strip(")")
-           out_dictionary["radon_complexity"] = complexity
+           try:
+               complexity = file[-1].strip().split(" ")[-1].strip("(").strip(")")
+               out_dictionary["radon_complexity"] = complexity
+           except:
+               print("something went wrong when parsing pylint")
            f.close()
 
         return out_dictionary

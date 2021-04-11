@@ -40,9 +40,12 @@ class Pylint_Sniffer(Abstract_Sniffer):
               os.path.getsize(outputfile) > 600: # make sure exists and not empty.
            f = open(outputfile)
            file = f.readlines()
-           rating = float(file[-2].split(" ")[6].split("/")[0])
-           out_dictionary["pylint_rating"] = rating
-           f.close()
+           try:
+               rating = float(file[-2].split(" ")[6].split("/")[0])
+               out_dictionary["pylint_rating"] = rating
+               f.close()
+           except:
+               print("something went wrong when parsing pylint")
 
         return out_dictionary
 
