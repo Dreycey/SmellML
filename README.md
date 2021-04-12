@@ -35,7 +35,7 @@ It must have a name in the first column and a git link in the second:
 "openai/finetune-transformer-lm","https://github.com/openai/finetune-transformer-lm.git"
 ```
 
-But having extra information is fine:
+* But having extra information is fine:
 
 ```
 "Project Name","URL","ML libraries","Number of Contributors","Number of Stars"
