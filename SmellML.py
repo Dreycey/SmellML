@@ -48,7 +48,9 @@ class Pipeline_Manager:
                             "bandit_conf_high",
                             "radon_complexity",
                             "pylint_rating",
-                            "bandit_lines"]
+                            "bandit_lines",
+                            "bandit_issue_list",
+                            "flake8_issue_list"]
 
     def download_codebase(self, githubURL):
         """ given a URL, this downloads the directory """
@@ -97,7 +99,8 @@ def runPipeline(pipeline_obj, input_directory, output_path):
     # run pipelin
     pipe_out = pipeline_obj.run_pipeline_simple(input_directory, output_path)
     if (sys.argv[2] != "--runcsv"):
-        pipeline_obj.addDictionaryToCSV(input_directory+"_total_out.csv",
+        print("\n collating information into a csv \n")
+        pipeline_obj.addDictionaryToCSV(output_path+"_total_out.csv",
                                     pipe_out,
                                     str(input_directory))
     else:
@@ -158,7 +161,7 @@ def main():
                          giturl = row[1]
                          name = giturl.split("/")[-1].strip('.git"')
                          downloadrepo(name, giturl)
-                         runPipeline(pipeline, name, f"smellmL_{name}/{name}_")
+                         runPipeline(pipeline, name, f"smellmL_{name}/{name}")
                          deleterepo(name)
                      rowcounter += 1
         else:

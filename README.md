@@ -12,7 +12,8 @@ python SmellML.py <ML code base>
 
 * Example:
 ```
-python SmellML.py faceswap/
+git clone https://github.com/charlesq34/pointnet2.git;
+python SmellML.py pointnet2/ smellml_pointnet/pointnet
 ```
 # How to use (for CSV with multiple github links)
 * Usage:

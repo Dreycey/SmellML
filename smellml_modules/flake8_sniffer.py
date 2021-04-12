@@ -43,7 +43,7 @@ class Flake8_Sniffer(Abstract_Sniffer):
               os.path.getsize(outputfile) > 600: # make sure exists and not empty.
             f = open(outputfile)
             file = f.readlines()
-
+            issue_list = []
             # count issues
             try:
                 issue_counter = {}
@@ -54,9 +54,14 @@ class Flake8_Sniffer(Abstract_Sniffer):
                        issue_counter[issue] += 1
                    else:
                        issue_counter[issue] = 1
+                   issue_list.append(issue)
+
                 sorted_top_issues = [k for k, v in sorted(issue_counter.items(),
                                                      key=lambda item: item[1],
                                                      reverse=True)]
+
+                out_dictionary["flake8_issue_list"] = '|'.join(issue_list)
+
                 if (len(sorted_top_issues) > 2):
                    out_dictionary["flake8_issue_one"] = sorted_top_issues[0]
                    out_dictionary["flake8_issue_two"] = sorted_top_issues[1]

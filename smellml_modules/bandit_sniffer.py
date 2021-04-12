@@ -70,6 +70,9 @@ class Bandit_Sniffer(Abstract_Sniffer):
                    line_counter += 1
                f.close()
 
+               issue_list = [output_info[issue]["issue"] for issue in output_info.keys()]
+               out_dictionary["bandit_issue_list"] = '|'.join(issue_list)
+
                # parse output_info dictionary (make own method)
                issue_counter = {}
                for issue in output_info.keys():
