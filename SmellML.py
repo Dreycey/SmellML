@@ -159,7 +159,7 @@ def main():
                  for row in spamreader:
                      if (rowcounter > 0):
                          giturl = row[1]
-                         name = giturl.split("/")[-1].strip('.git"')
+                         name = giturl.split("/")[-1].strip('"').replace('.git',"")
                          downloadrepo(name, giturl)
                          runPipeline(pipeline, name, f"smellmL_{name}/{name}")
                          deleterepo(name)
