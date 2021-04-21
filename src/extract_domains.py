@@ -4,7 +4,7 @@ Extracts topics (domains/tags) from given github repo
 """
 import sys
 import csv
-import re
+import time
 import github
 from github import Github
 import requests
@@ -21,6 +21,7 @@ Output:
 def get_topics(git_obj, git_project):
     topics = []
     try:
+        time.sleep(1)
         # get Repository object from Github project
         repo = git_obj.get_repo(git_project)
         # retrieve topics form repo object and store in dictionary
@@ -39,11 +40,21 @@ def get_topics_from_csv(git_obj, csv_file):
         line_count = 0
         for row in csv_reader:
             next(csv_reader)
-            print(get_topics(git_obj, row[0]))
-            #topics_dict[row[0]] = get_topics(git_obj, row[0])
+            #print(get_topics(git_obj, row[0]))
+            topics_dict[row[0]] = get_topics(git_obj, row[0])
             line_count += 1
         print(f'Processed {line_count} lines.')
     return topics_dict
+
+
+def save_to_csv(dict):
+    with open("project_topics.csv", mode='w') as csv_file:
+        fieldnames = ['project_name', 'topics']
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for key in dict:
+            writer.writerow({'project_name': key, 'topics': data_dict[key]})
 
 
 def main():
@@ -62,6 +73,7 @@ def main():
     # TEST
     if '.csv' in input:
         topics = get_topics_from_csv(gitObj, input)
+        save_to_csv(topics)
     else:
         print(f'Project: {input}, Topics: {get_topics(gitObj, input)}')
 
