@@ -49,6 +49,11 @@ def get_topics_from_csv(git_obj, csv_file):
 def main():
     """ controls the script """
     gitObj = Github()
+    # # using an access token
+    # gitObj = Github("access_token")
+    #
+    # # Github Enterprise with custom hostname
+    # gitObj = Github(base_url="https://{hostname}/api/v3", login_or_token="access_token")
     topics = {}
 
     ### SCRIPT INPUT
