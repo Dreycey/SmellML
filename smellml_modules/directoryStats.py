@@ -27,7 +27,8 @@ class directoryStats:
             try:
                 self.files.append(fileStats(p))
             except:
-                print(f"did not work for file: {p}")
+                None
+                #print(f"did not work for file: {p}")
 
         self.processDirectory()
 
@@ -125,9 +126,6 @@ class directoryStats:
         return sum([f.getNumEnumerateIssues() for f in self.files])
 
     def processDirectory(self):
-
-        print(f"number of methods: {self.getNumMethods()}")
-        print(f"number of lines: {self.getNumLines()}")
         #getLinesPerMethod
         self.linesPerMethod = self.getLinesInMethods() / self.getNumMethods()
 

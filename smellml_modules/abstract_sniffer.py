@@ -2,6 +2,7 @@
 import abc
 from abc import ABC, abstractmethod, abstractproperty
 import subprocess
+import os
 
 class Abstract_Sniffer(ABC):
 
@@ -33,13 +34,10 @@ class Abstract_Sniffer(ABC):
     def run_command(self, infilepath, outdir):
         """ runs the command for the program """
         full_cmd = self.CMD.split("INFILE")[0] + infilepath + self.CMD.split("INFILE")[1]
-        subprocess.call(f"{full_cmd} > {outdir}_{self.sniffer_name}.txt",shell=True)
-        print(full_cmd)
+        FNULL = open(os.devnull, 'w')
+        subprocess.call(f"{full_cmd} > {outdir}_{self.sniffer_name}.txt",shell=True,stdout=FNULL,stderr=subprocess.STDOUT)
         return f"{outdir}_{self.sniffer_name}.txt"
 
     @abstractmethod
     def parse_output(self, outputfile, directory):
         pass
-
-    def parse_doc(self):
-        print("Hello, world!")
