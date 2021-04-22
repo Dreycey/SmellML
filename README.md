@@ -26,9 +26,7 @@ python SmellML.py <path git csv> --runcsv
 python3 SmellML.py  my-software2.0-dataset-20210331.csv  --runcsv
 ```
 
-* structure of csvfile
-It must have a name in the first column and a git link in the second:
-
+* structure of csvfile (name, url)
 ```
 "Project Name","URL"
 "charlesq34/pointnet2","https://github.com/charlesq34/pointnet2.git"
@@ -36,6 +34,7 @@ It must have a name in the first column and a git link in the second:
 ```
 
 ## Pipeline
+### The SmellML pipeline is composed of several different underlysing softwares, allowing for an end user to take advantage of multiple tools at once for both linting, security, and general code smells of a particular repository. The underlying structure of SmellML is below. 
 
 ![logo for SmellML Pipeline](figs/pipeline.png)
 
