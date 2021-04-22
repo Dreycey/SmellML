@@ -1,5 +1,14 @@
 # CSV file can have additional columns
 
+
+* But having extra information is fine:
+
+```
+"Project Name","URL","ML libraries","Number of Contributors","Number of Stars"
+"charlesq34/pointnet2","https://github.com/charlesq34/pointnet2.git","sklearn,tensorflow","3","1522"
+"openai/finetune-transformer-lm","https://github.com/openai/finetune-transformer-lm.git","sklearn,tensorflow","3","1470"
+```
+
 # Extra information on the SmellML project:
 
 ### CSV of ML from [ML projects](https://serene-beach-16261.herokuapp.com/)
