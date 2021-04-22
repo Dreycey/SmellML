@@ -43,6 +43,10 @@ It must have a name in the first column and a git link in the second:
 "openai/finetune-transformer-lm","https://github.com/openai/finetune-transformer-lm.git","sklearn,tensorflow","3","1470"
 ```
 
+## Pipeline
+
+![logo for SmellML Pipeline](figs/pipeline.png)
+
 # Extra information on the SmellML project:
 
 ### CSV of ML from [ML projects](https://serene-beach-16261.herokuapp.com/)
