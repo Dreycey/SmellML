@@ -10,8 +10,9 @@ import sys
 import csv
 import time
 import github
+from progressbar import progressbar
+from tqdm import tqdm
 from github import Github
-import requests
 
 """
 Extracts topics (domains/tags) from given github repo and returns
