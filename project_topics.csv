@@ -1,0 +1,102 @@
+project_name,url,topics
+charlesq34/pointnet2,https://github.com/charlesq34/pointnet2.git,"[['point-cloud', 'deep-learning', 'classification', 'segmentation', '3d-shape']]"
+qq547276542/Agriculture_KnowledgeGraph,https://github.com/qq547276542/Agriculture_KnowledgeGraph.git,"[['knowledge-graph', 'named-entity-recognition', 'relation-extraction', 'question-answering']]"
+r9y9/wavenet_vocoder,https://github.com/r9y9/wavenet_vocoder.git,"[['wavenet', 'speech-synthesis', 'speech-processing', 'pytorch', 'python', 'wavenet-vocoder', 'neural-vocoder', 'speech']]"
+NifTK/NiftyNet,https://github.com/NifTK/NiftyNet.git,"[['tensorflow', 'distributed', 'ml', 'neural-network', 'python', 'python2', 'python3', 'pip', 'deep-neural-networks', 'deep-learning', 'convolutional-neural-networks', 'medical-imaging', 'medical-image-computing', 'medical-image-processing', 'medical-images', 'segmentation', 'gan', 'autoencoder', 'medical-image-analysis', 'image-guided-therapy']]"
+kenshohara/3D-ResNets-PyTorch,https://github.com/kenshohara/3D-ResNets-PyTorch.git,"[['deep-learning', 'computer-vision', 'pytorch', 'python', 'action-recognition', 'video-recognition']]"
+kkroening/ffmpeg-python,https://github.com/kkroening/ffmpeg-python.git,[[]]
+Microsoft/human-pose-estimation.pytorch,https://github.com/Microsoft/human-pose-estimation.pytorch.git,"[['human-pose-estimation', 'deep-learning', 'coco-keypoints-detection', 'mpii-dataset', 'mscoco-keypoint']]"
+layumi/Person_reID_baseline_pytorch,https://github.com/layumi/Person_reID_baseline_pytorch.git,"[['open-reid', 'pytorch', 'person-reidentification', 'image-retrieval', 'person-reid', 're-ranking', 'random-erasing', 'image-search', 'market-1501', 'dukemtmc', 'dukemtmc-reid', 'tutorial', 'apex', 'baseline', 'msmt17', 'cuhk-np', 'vehicle-reid', 'awesome-list', 'gait-recognition', 'circle-loss']]"
+openai/finetune-transformer-lm,https://github.com/openai/finetune-transformer-lm.git,[['paper']]
+asyml/texar,https://github.com/asyml/texar.git,"[['machine-learning', 'natural-language-processing', 'tensorflow', 'deep-learning', 'text-generation', 'python', 'machine-translation', 'dialog-systems', 'texar', 'bert', 'gpt-2', 'xlnet', 'text-data', 'data-processing', 'casl-project']]"
+google-research/batch-ppo,https://github.com/google-research/batch-ppo.git,"[['reinforcement-learning', 'tensorflow', 'multi-processing', 'artificial-intelligence', 'python', 'vectorized-computation', 'control']]"
+numenta/NAB,https://github.com/numenta/NAB.git,[[]]
+crownpku/Information-Extraction-Chinese,https://github.com/crownpku/Information-Extraction-Chinese.git,"[['nlp', 'chinese-nlp', 'information-extraction', 'relation-extraction', 'named-entity-recognition']]"
+bethgelab/foolbox,https://github.com/bethgelab/foolbox.git,"[['adversarial-examples', 'machine-learning', 'python', 'adversarial-attacks', 'pytorch', 'tensorflow', 'jax', 'keras']]"
+cornellius-gp/gpytorch,https://github.com/cornellius-gp/gpytorch.git,"[['pytorch', 'gaussian-processes', 'gpu-acceleration']]"
+jiesutd/NCRFpp,https://github.com/jiesutd/NCRFpp.git,"[['pytorch', 'ner', 'sequence-labeling', 'crf', 'lstm-crf', 'char-rnn', 'char-cnn', 'named-entity-recognition', 'part-of-speech-tagger', 'chunking', 'neural-networks', 'nbest', 'lstm', 'cnn', 'natural-language-processing', 'artificial-intelligence']]"
+facebookresearch/SentEval,https://github.com/facebookresearch/SentEval.git,[[]]
+joeddav/devol,https://github.com/joeddav/devol.git,"[['deep-learning', 'genetic-algorithm', 'machine-learning', 'keras', 'automl', 'neural-architecture-search', 'computer-vision']]"
+Cloud-CV/Fabrik,https://github.com/Cloud-CV/Fabrik.git,"[['neural-network', 'visualization', 'ide', 'caffe', 'keras', 'tensorflow']]"
+facebookresearch/poincare-embeddings,https://github.com/facebookresearch/poincare-embeddings.git,[[]]
+pytorch/tnt,https://github.com/pytorch/tnt.git,"[['pytorch', 'neural-network', 'python', 'machine-learning', 'deep-learning', 'visdom', 'reinforcement-learning']]"
+p4-team/ctf,https://github.com/p4-team/ctf.git,"[['capture-the-flag', 'ctf', 'security', 'writeup']]"
+datitran/object_detector_app,https://github.com/datitran/object_detector_app.git,"[['tensorflow', 'opencv']]"
+JasonKessler/scattertext,https://github.com/JasonKessler/scattertext.git,"[['nlp', 'd3', 'word-embeddings', 'machine-learning', 'natural-language-processing', 'visualization', 'word2vec', 'text-visualization', 'text-mining', 'japanese-language', 'computational-social-science', 'sentiment', 'eda', 'exploratory-data-analysis', 'text-as-data', 'scatter-plot', 'topic-modeling', 'stylometry', 'stylometric', 'semiotic-squares']]"
+CSTR-Edinburgh/merlin,https://github.com/CSTR-Edinburgh/merlin.git,"[['merlin', 'speech-synthesis', 'text-to-speech', 'voice-conversion', 'deep-learning', 'python', 'theano', 'tensorflow', 'keras']]"
+scikit-learn-contrib/categorical-encoding,https://github.com/scikit-learn-contrib/categorical-encoding.git,[[]]
+GoogleCloudPlatform/cloudml-samples,https://github.com/GoogleCloudPlatform/cloudml-samples.git,"[['cloudml', 'cloudml-samples', 'keras-tensorflow', 'keras', 'gcp']]"
+bfortuner/ml-cheatsheet,https://github.com/bfortuner/ml-cheatsheet.git,"[['machine-learning', 'cheatsheets', 'neural-network', 'deep-learning', 'deep-learning-tutorial', 'data-science']]"
+mrharicot/monodepth,https://github.com/mrharicot/monodepth.git,[[]]
+dask/distributed,https://github.com/dask/distributed.git,"[['pydata', 'dask', 'distributed-computing', 'python']]"
+SullyChen/Autopilot-TensorFlow,https://github.com/SullyChen/Autopilot-TensorFlow.git,[[]]
+tkipf/pygcn,https://github.com/tkipf/pygcn.git,[[]]
+CamDavidsonPilon/lifelines,https://github.com/CamDavidsonPilon/lifelines.git,"[['survival-analysis', 'python', 'statistics', 'data-science', 'maximum-likelihood', 'reliability-analysis', 'cox-regression']]"
+NVIDIA/sentiment-discovery,https://github.com/NVIDIA/sentiment-discovery.git,[[]]
+HyperGAN/HyperGAN,https://github.com/HyperGAN/HyperGAN.git,"[['gan', 'unsupervised-learning', 'generative-adversarial-network', 'artificial-intelligence', 'machine-learning', 'machine-learning-api', 'python', 'online-learning', 'computer-vision', 'pytorch', 'sponsors', 'hypergan']]"
+alfredfrancis/ai-chatbot-framework,https://github.com/alfredfrancis/ai-chatbot-framework.git,"[['chatbot', 'python', 'nltk', 'ai', 'sklearn', 'natural-language', 'conversation', 'chatbots', 'ai-chatbot-framework']]"
+mne-tools/mne-python,https://github.com/mne-tools/mne-python.git,"[['python', 'neuroscience', 'electroencephalography', 'magnetoencephalography', 'electrocorticography', 'machine-learning', 'statistics', 'visualization', 'eeg', 'meg', 'ecog', 'neuroimaging']]"
+SheffieldML/GPy,https://github.com/SheffieldML/GPy.git,[[]]
+KaiyangZhou/deep-person-reid,https://github.com/KaiyangZhou/deep-person-reid.git,"[['deep-learning', 'pytorch', 'computer-vision', 'machine-learning', 'deep-neural-networks', 'person-reidentification']]"
+DLTK/DLTK,https://github.com/DLTK/DLTK.git,"[['deep-learning', 'machine-learning', 'neural-networks', 'tensorflow', 'medical-imaging', 'data-science', 'ml', 'deep-neural-networks', 'python', 'medical', 'dltk', 'dltk-model-zoo', 'neural-network', 'neuroimaging', 'cnn', 'medical-image-processing']]"
+pgmpy/pgmpy,https://github.com/pgmpy/pgmpy.git,"[['python', 'probabilistic-graphical-models', 'bayesian-networks', 'causal-inference', 'statistics', 'statistical-inference', 'structure-learning']]"
+rusty1s/pytorch_geometric,https://github.com/rusty1s/pytorch_geometric.git,"[['pytorch', 'geometric-deep-learning', 'graph-neural-networks']]"
+jakeret/tf_unet,https://github.com/jakeret/tf_unet.git,"[['image-segmentation', 'neural-network', 'deep-learning', 'tensorflow']]"
+mpatacchiola/deepgaze,https://github.com/mpatacchiola/deepgaze.git,"[['convolutional-neural-networks', 'motion-tracking', 'color-detection', 'face-detection', 'skin-detection', 'motion-detection', 'head-pose-estimation', 'human-computer-interaction', 'histogram-comparison', 'histogram-intersection', 'cnn', 'particle-filter', 'saliency-map']]"
+hyperopt/hyperopt-sklearn,https://github.com/hyperopt/hyperopt-sklearn.git,[[]]
+dnouri/nolearn,https://github.com/dnouri/nolearn.git,"[['scikit-learn', 'lasagne', 'deep-learning', 'machine-learning']]"
+r9y9/deepvoice3_pytorch,https://github.com/r9y9/deepvoice3_pytorch.git,"[['tts', 'speech-synthesis', 'end-to-end', 'speech-processing', 'machine-learning', 'pytorch', 'python', 'multi-speaker']]"
+tf-coreml/tf-coreml,https://github.com/tf-coreml/tf-coreml.git,[[]]
+chrischoy/3D-R2N2,https://github.com/chrischoy/3D-R2N2.git,[[]]
+thunlp/OpenKE,https://github.com/thunlp/OpenKE.git,[['knowledge-embedding']]
+junyanz/BicycleGAN,https://github.com/junyanz/BicycleGAN.git,"[['pytorch', 'pix2pix', 'gans', 'generative-adversarial-network', 'deep-learning']]"
+dhwajraj/deep-siamese-text-similarity,https://github.com/dhwajraj/deep-siamese-text-similarity.git,[[]]
+snowkylin/TensorFlow-cn,https://github.com/snowkylin/TensorFlow-cn.git,[[]]
+shicai/MobileNet-Caffe,https://github.com/shicai/MobileNet-Caffe.git,"[['mobilenet', 'caffe', 'imagenet', 'mobilenetv2', 'mobilnet-v2']]"
+meijieru/crnn.pytorch,https://github.com/meijieru/crnn.pytorch.git,"[['neural-network', 'scene-texts', 'recognition']]"
+explosion/thinc,https://github.com/explosion/thinc.git,"[['machine-learning', 'deep-learning', 'artificial-intelligence', 'ai', 'python', 'nlp', 'natural-language-processing', 'spacy', 'machine-learning-library', 'type-checking', 'functional-programming', 'pytorch', 'tensorflow', 'mxnet', 'jax']]"
+sksq96/pytorch-summary,https://github.com/sksq96/pytorch-summary.git,"[['pytorch', 'keras', 'summary', 'deep-learning']]"
+allenai/bilm-tf,https://github.com/allenai/bilm-tf.git,[[]]
+probcomp/bayeslite,https://github.com/probcomp/bayeslite.git,"[['probabilistic-programming', 'automatic-data-modeling', 'data-science', 'machine-learning', 'databases']]"
+ZhengyaoJiang/PGPortfolio,https://github.com/ZhengyaoJiang/PGPortfolio.git,[[]]
+gpleiss/efficient_densenet_pytorch,https://github.com/gpleiss/efficient_densenet_pytorch.git,"[['densenet', 'pytorch', 'deep-learning']]"
+eriklindernoren/PyTorch-YOLOv3,https://github.com/eriklindernoren/PyTorch-YOLOv3.git,[[]]
+EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10,https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git,[[]]
+devnag/pytorch-generative-adversarial-networks,https://github.com/devnag/pytorch-generative-adversarial-networks.git,"[['pytorch', 'gan', 'gans', 'machine-learning', 'deep-learning']]"
+bfelbo/DeepMoji,https://github.com/bfelbo/DeepMoji.git,"[['machine-learning', 'deep-learning', 'natural-language-processing', 'python']]"
+NVIDIA/flownet2-pytorch,https://github.com/NVIDIA/flownet2-pytorch.git,[[]]
+vaexio/vaex,https://github.com/vaexio/vaex.git,"[['dataframe', 'python', 'bigdata', 'tabular-data', 'visualization', 'memory-mapped-file', 'hdf5', 'machine-learning', 'machinelearning']]"
+Lasagne/Recipes,https://github.com/Lasagne/Recipes.git,[[]]
+DragonComputer/Dragonfire,https://github.com/DragonComputer/Dragonfire.git,"[['linux', 'ubuntu', 'spacy', 'chatbot', 'kaldi', 'speech-recognition', 'speech-to-text', 'text-to-speech', 'nlp', 'machine-learning', 'artificial-intelligence', 'virtual-assistant', 'personal-assistant']]"
+NVIDIA/waveglow,https://github.com/NVIDIA/waveglow.git,[[]]
+SeanNaren/deepspeech.pytorch,https://github.com/SeanNaren/deepspeech.pytorch.git,[[]]
+chuanqi305/MobileNet-SSD,https://github.com/chuanqi305/MobileNet-SSD.git,"[['ssd', 'mobilenet-ssd', 'caffe', 'mobilenet', 'detection']]"
+yjxiong/temporal-segment-networks,https://github.com/yjxiong/temporal-segment-networks.git,"[['temporal-segment-networks', 'action-recognition', 'video-understanding']]"
+taehoonlee/tensornets,https://github.com/taehoonlee/tensornets.git,"[['tensorflow', 'model', 'zoo', 'deep-learning', 'object-detection', 'yolo', 'yolov2', 'yolov3', 'faster-rcnn', 'resnet', 'inception', 'nasnet', 'pnasnet', 'vgg', 'densenet', 'mobilenet', 'mobilenetv2', 'mobilenetv3', 'efficientnet', 'squeezenet']]"
+openai/InfoGAN,https://github.com/openai/InfoGAN.git,[['paper']]
+Hironsan/anago,https://github.com/Hironsan/anago.git,"[['natural-language-processing', 'machine-learning', 'deep-learning', 'named-entity-recognition', 'keras', 'sequence-labeling']]"
+uTensor/uTensor,https://github.com/uTensor/uTensor.git,"[['tensorflow', 'mbed', 'machine-learning', 'deep-learning', 'cortex-m', 'edge-computing', 'microcontroller', 'embedded', 'iot-middleware', 'iot']]"
+cmu-db/ottertune,https://github.com/cmu-db/ottertune.git,[[]]
+deepgram/kur,https://github.com/deepgram/kur.git,"[['deep-learning', 'deep-neural-networks', 'speech-recognition', 'deep-learning-tutorial', 'machine-learning', 'neural-networks', 'neural-network', 'image-recognition', 'speech-to-text']]"
+mailgun/talon,https://github.com/mailgun/talon.git,[[]]
+modin-project/modin,https://github.com/modin-project/modin.git,"[['dataframe', 'pandas', 'ray', 'distributed', 'datascience', 'pandas-on-ray', 'modin', 'sql', 'python']]"
+basveeling/wavenet,https://github.com/basveeling/wavenet.git,[[]]
+geek-ai/MAgent,https://github.com/geek-ai/MAgent.git,"[['reinforcement-learning', 'multi-agent', 'deep-learning']]"
+chainer/chainercv,https://github.com/chainer/chainercv.git,"[['chainer', 'computer-vision', 'neural-network', 'deep-learning', 'python', 'cupy', 'chainercv']]"
+GPflow/GPflow,https://github.com/GPflow/GPflow.git,"[['gaussian-processes', 'tensorflow', 'gpflow', 'machine-learning', 'variational-inference', 'bayesian-statistics', 'markov-chain-monte-carlo', 'stochastic-processes', 'deep-learning', 'ml', 'gp']]"
+chuyangliu/snake,https://github.com/chuyangliu/snake.git,"[['snake', 'game', 'artificial-intelligence', 'graph-theory', 'algorithm', 'python', 'deep-reinforcement-learning', 'reinforcement-learning']]"
+tensorflow/ranking,https://github.com/tensorflow/ranking.git,"[['ranking', 'machine-learning', 'deep-learning', 'information-retrieval', 'learning-to-rank', 'recommender-systems']]"
+pathak22/noreward-rl,https://github.com/pathak22/noreward-rl.git,"[['deep-reinforcement-learning', 'curiosity', 'exploration', 'deep-learning', 'rl', 'deep-neural-networks', 'mario', 'doom', 'self-supervised', 'tensorflow', 'openai-gym']]"
+berkeleydeeprlcourse/homework,https://github.com/berkeleydeeprlcourse/homework.git,[[]]
+richliao/textClassifier,https://github.com/richliao/textClassifier.git,"[['text-classification', 'hierarchical-attention-networks', 'attention-mechanism', 'recurrent-neural-networks', 'convolutional-neural-networks']]"
+commonsense/conceptnet5,https://github.com/commonsense/conceptnet5.git,[[]]
+google/deepvariant,https://github.com/google/deepvariant.git,"[['tensorflow', 'deep-neural-network', 'genomics', 'science', 'dna', 'sequencing', 'genome', 'bioinformatics', 'deep-learning', 'ngs', 'deepvariant', 'machine-learning']]"
+mil-tokyo/webdnn,https://github.com/mil-tokyo/webdnn.git,"[['deep-neural-networks', 'accelerate', 'optimization', 'javascript', 'webgpu']]"
+jadore801120/attention-is-all-you-need-pytorch,https://github.com/jadore801120/attention-is-all-you-need-pytorch.git,"[['attention', 'deep-learning', 'attention-is-all-you-need', 'pytorch', 'nlp', 'natural-language-processing']]"
+instacart/lore,https://github.com/instacart/lore.git,"[['machine-learning', 'python']]"
+charlesq34/pointnet,https://github.com/charlesq34/pointnet.git,"[['point-cloud', 'classification', 'segmentation', 'neural-network', 'tensorflow', 'geometry-processing']]"
+KupynOrest/DeblurGAN,https://github.com/KupynOrest/DeblurGAN.git,"[['deep-learning', 'gan', 'deblurring', 'image-processing', 'image-manipulation', 'neural-network', 'convolutional-neural-networks', 'convolutional-networks', 'computer-vision', 'image-to-image-translation', 'blurry-images', 'pytorch', 'paper', 'pix2pix']]"
+meetshah1995/pytorch-semseg,https://github.com/meetshah1995/pytorch-semseg.git,"[['pytorch', 'semantic-segmentation', 'deep-learning', 'fully-convolutional-networks']]"
+polyaxon/polyaxon,https://github.com/polyaxon/polyaxon.git,"[['deep-learning', 'machine-learning', 'artificial-intelligence', 'data-science', 'reinforcement-learning', 'kubernetes', 'tensorflow', 'pytorch', 'keras', 'mxnet', 'caffe', 'ai', 'ml', 'k8s', 'jupyter', 'notebook', 'jupyterlab', 'polyaxon', 'pipelines', 'workflow']]"
+google/tangent,https://github.com/google/tangent.git,"[['autodiff', 'automatic-differentiation', 'machine-learning', 'deep-learning']]"
+openai/generating-reviews-discovering-sentiment,https://github.com/openai/generating-reviews-discovering-sentiment.git,[['paper']]
