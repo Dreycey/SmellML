@@ -41,20 +41,23 @@ def get_topics_from_csv(git_obj, csv_file):
     # "Project Name","URL","ML libraries","Number of Contributors","Number of Stars"
     topics_dict = {}
     url_dict = {}
+    MAX_READS = 100
+
     with open(csv_file) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         # skip header
         next(csv_reader, None)
         line_count = 0
-        for row in csv_reader:
+        for row in tqdm(csv_reader, total=MAX_READS):
             # limit reads to 100 due to github api query restrictions
-            if line_count > 100:
+            if line_count > MAX_READS:
                 return topics_dict, url_dict
             else:
                 topics_dict[row[0]] = get_topics(git_obj, row[0])
                 url_dict[row[0]] = row[1]
                 line_count += 1
         #print(f'Processed {line_count} lines.')
+
     return topics_dict, url_dict
 
 
@@ -70,9 +73,9 @@ def save_to_csv(dict1, dict2):
 
 def main():
     # using an access token allows for more queries
-    gitObj = Github("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")
+    # gitObj = Github("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")
     # create github object without an access token (limits queries per hour)
-    # gitObj = Github()
+    gitObj = Github()
 
     topics = {}
     urls = {}
