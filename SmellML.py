@@ -8,6 +8,9 @@ from smellml_modules.flake8_sniffer import Flake8_Sniffer
 from smellml_modules.pylint_sniffer import Pylint_Sniffer
 from smellml_modules.bandit_sniffer import Bandit_Sniffer
 from smellml_modules.radon_sniffer import Radon_Sniffer
+from smellml_modules.smellml_sniffer import Smellml_Sniffer
+from tqdm import tqdm
+import time
 
 """
 This master script controls the flow for the SmellML pipeline.
@@ -30,7 +33,8 @@ class Pipeline_Manager:
         bandit_sniff = Bandit_Sniffer()
         pylint_sniff = Pylint_Sniffer()
         radon_sniff = Radon_Sniffer()
-        self.tool_list = [flake8_sniff, bandit_sniff, pylint_sniff, radon_sniff]
+        smellml_sniff = Smellml_Sniffer()
+        self.tool_list = [flake8_sniff, bandit_sniff, pylint_sniff, radon_sniff, smellml_sniff]
         self.headernames = ["tool name",
                             "flake8_issue_one",
                             "flake8_issue_two",
@@ -50,7 +54,20 @@ class Pipeline_Manager:
                             "pylint_rating",
                             "bandit_lines",
                             "bandit_issue_list",
-                            "flake8_issue_list"]
+                            "flake8_issue_list",
+                            "smellml_LinesNotInClasses",
+                            "smellml_LinesInClasses",
+                            "smellml_LinesInMethods",
+                            "smellml_NumMethods",
+                            "smellml_NumClasses",
+                            "smellml_NumCommentLines",
+                            "smellml_LinesPerMethod",
+                            "smellml_LinesPerClass",
+                            "smellml_AvgNumParams",
+                            "smellml_NumNestedLoops",
+                            "smellml_MutableParamsCount",
+                            "smellml_NumEnumerateIssues",
+                            "time_for_pipeline"]
 
     def download_codebase(self, githubURL):
         """ given a URL, this downloads the directory """
@@ -59,7 +76,10 @@ class Pipeline_Manager:
     def run_pipeline_simple(self, inputfile, outprefix):
         """ simply runs each tool on an input file """
         # run each tool in the pipeline
+        print(f'working on: {str(inputfile.strip("/"))}')
         tool_dict = {}
+        start_time = time.perf_counter()
+
         for tool in self.tool_list:
             # use the tool
             outfile = tool.run_command(inputfile, outprefix)
@@ -68,6 +88,12 @@ class Pipeline_Manager:
             subdict = tool.parse_output(outfile, outdirectory)
             tool_dict.update(subdict)
             tool_dict.update({"tool name" : str(inputfile.strip("/"))})
+
+        end_time = time.perf_counter()
+        time_difference = abs(end_time - start_time)
+        tool_dict.update({"time_for_pipeline" : time_difference})
+        print(f'DONE! time used: {time_difference} seconds')
+
         return tool_dict
 
     def addDictionaryToCSV(self, outfilename, out_dict, tool_name):
@@ -91,7 +117,7 @@ class Pipeline_Manager:
 
 def runPipeline(pipeline_obj, input_directory, output_path):
     """ This method runs the pipeline """
-    print(f"The out path is: {output_path}")
+    #print(f"The out path is: {output_path}")
     # create out dir
     outdirectory = os.path.dirname(output_path)
     if not os.path.exists(outdirectory):
@@ -99,7 +125,7 @@ def runPipeline(pipeline_obj, input_directory, output_path):
     # run pipelin
     pipe_out = pipeline_obj.run_pipeline_simple(input_directory, output_path)
     if (sys.argv[2] != "--runcsv"):
-        print("\n collating information into a csv \n")
+        #print("\n collating information into a csv \n")
         pipeline_obj.addDictionaryToCSV(output_path+"_total_out.csv",
                                     pipe_out,
                                     str(input_directory))
@@ -111,7 +137,7 @@ def runPipeline(pipeline_obj, input_directory, output_path):
 
 def downloadrepo(name, giturl):
     """ downloads a github repository """
-    os.system(f"git clone {giturl} {name}")
+    os.system(f"git clone {giturl} {name} > /dev/null 2>&1")
 
 def deleterepo(reponame):
     """ deletes a github repository """
@@ -154,14 +180,16 @@ def main():
     if (len(sys.argv) == 3):
         if (output_path == "--runcsv"):
             with open(input_directory, newline='') as csvfile:
+                total_lines = len(csvfile.readlines())-1
+            with open(input_directory, newline='') as csvfile:
                  spamreader = csv.reader(csvfile, delimiter=",", quotechar='|')
                  rowcounter = 0
-                 for row in spamreader:
+                 for row in tqdm(spamreader, total=total_lines):
                      if (rowcounter > 0):
                          giturl = row[1]
-                         name = giturl.split("/")[-1].strip('.git"')
+                         name = giturl.split("/")[-1].strip('"').replace('.git',"")
                          downloadrepo(name, giturl)
-                         runPipeline(pipeline, name, f"smellmL_{name}/{name}")
+                         runPipeline(pipeline, name, f"smellML_{name}/{name}")
                          deleterepo(name)
                      rowcounter += 1
         else:
