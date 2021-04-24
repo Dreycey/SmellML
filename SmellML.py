@@ -173,8 +173,8 @@ def main():
         print(HELP)
         exit(1)
 
-    input_directory = sys.argv[1]
-    output_path = sys.argv[2]
+    input_directory = os.path.abspath(sys.argv[1])
+    output_path = os.path.abspath(sys.argv[2])
     # instantiate the pipeline.
     pipeline = Pipeline_Manager()
     if (len(sys.argv) == 3):
