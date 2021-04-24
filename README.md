@@ -4,7 +4,7 @@
 ![logo for SmellML](figs/logo.png)
 
 # How to use (for a single repository or directory)
-* Demo: (VIDEO DEMONSTRATION)[https://www.youtube.com/watch?v=IAQxTzsOuAY]
+* Demo: [VIDEO DEMONSTRATION](https://www.youtube.com/watch?v=IAQxTzsOuAY)
 * Usage:
 ```
 python SmellML.py <ML code base>
